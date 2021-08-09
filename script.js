@@ -2,36 +2,30 @@
 
 // DZ 1
 
-// let numberoffilms = prompt ("сколько фильмов?", "");
+let numberoffilms = +prompt ("сколько фильмов?", "");
 
-// const pers = {
-//     count: numberoffilms,
-//     movies: {},
-//     actors: {},
-//     genres: [],
-//     privat: false
+const pers = {
+    count: numberoffilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
 
-// };
-// const x = prompt("One of the last films"),
-//     y = prompt("Rate"),
-//     z = prompt("One of the last films"),
-//     e = prompt("Rate");   
-// pers.movies[x] = y;
-// pers.movies[z] = e;
-// console.log(pers);
+};
+for(let i = 0; i < 2; i++){
 
-// let x = 50;
-// while(x > 45){
-//     console.log(x);
-//     x--;
-// }
+    const x = prompt("One of the last films"),
+          y = prompt("Rate");
 
-// let x = 50;
-
-// for (let i=0; i <= 8; i++){
-//     if(i==6){
-//         continue; 
-//     }
-//     console.log(i);
-
-// }
+    (x != null && y != null && x.length > 0 && y.length > 0 && x.length < 50) ? pers.movies[x] = y : i--;
+}
+if(pers.count < 10){
+    alert("Ты слишком мало просмотрел фильмов");
+}else if(10 < pers.count < 30){
+    alert("Ты посмотрел немного фильмов");
+}else if (pers.count > 30){
+    alert("Ты киноман!");
+}else{
+    alert("Ошибка");
+}
+console.log(pers);
