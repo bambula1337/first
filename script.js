@@ -51,64 +51,89 @@
 
 //// Практика 3
 
-let numberoffilms;
+// let numberoffilms;
 
-function start() {
-    numberoffilms = +prompt ("сколько фильмов?", "");
+// function start() {
+//     numberoffilms = +prompt ("сколько фильмов?", "");
     
-    while(numberoffilms == "" || numberoffilms == null || isNaN(numberoffilms)){
-        numberoffilms = +prompt ("сколько фильмов?", "");
-    }
-}
+//     while(numberoffilms == "" || numberoffilms == null || isNaN(numberoffilms)){
+//         numberoffilms = +prompt ("сколько фильмов?", "");
+//     }
+// }
 
-start();
+// start();
 
-const pers = {
-    count: numberoffilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+// const pers = {
+//     count: numberoffilms,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     privat: false
+// };
 
-function rememberMyFilms() {
-    for(let i = 0; i < 2; i++){
+// function rememberMyFilms() {
+//     for(let i = 0; i < 2; i++){
 
-        const x = prompt("One of the last films"),
-              y = prompt("Rate");
+//         const x = prompt("One of the last films"),
+//               y = prompt("Rate");
     
-        (x != null && y != null && x.length > 0 && y.length > 0 && x.length < 50) ? pers.movies[x] = y : i--;
-    }
+//         (x != null && y != null && x.length > 0 && y.length > 0 && x.length < 50) ? pers.movies[x] = y : i--;
+//     }
 
-}
+// }
 
-rememberMyFilms();
+// rememberMyFilms();
 
-function lvlOfUser() {
-    if(pers.count < 10){
-        alert("Ты слишком мало просмотрел фильмов");
-    }else if(10 < pers.count < 30){
-        alert("Ты посмотрел немного фильмов");
-    }else if (pers.count > 30){
-        alert("Ты киноман!");
-    }else{
-        alert("Ошибка");
-    }
-}
-lvlOfUser();
-
-
-function showMyDB() {
-    (pers.privat == false) ? (console.log(pers)) : console.log("privat = true");
-}
-showMyDB();
+// function lvlOfUser() {
+//     if(pers.count < 10){
+//         alert("Ты слишком мало просмотрел фильмов");
+//     }else if(10 < pers.count < 30){
+//         alert("Ты посмотрел немного фильмов");
+//     }else if (pers.count > 30){
+//         alert("Ты киноман!");
+//     }else{
+//         alert("Ошибка");
+//     }
+// }
+// lvlOfUser();
 
 
-function writeYourGender() {
-    for(let i = 0; i < 3; i++){
-        const x = prompt(`Ваш любимый жанр под номером ${i++}.`);
-        pers.genres[--i] = x;
-    }
+// function showMyDB() {
+//     (pers.privat == false) ? (console.log(pers)) : console.log("privat = true");
+// }
+// showMyDB();
 
-}
-writeYourGender();    
+
+// function writeYourGender() {
+//     for(let i = 0; i < 3; i++){
+//         const x = prompt(`Ваш любимый жанр под номером ${i++}.`);
+//         pers.genres[--i] = x;
+//     }
+
+// }
+// writeYourGender();    
+
+/// Call Back functions
+
+// function fisrt() {
+//     setTimeout(function(){
+//         console.log(1);
+//     }, 500);
+
+// }
+
+// function second() {
+//     console.log(2);
+// }
+
+// fisrt();
+// second();
+
+// function l(lang, callback) {
+//     console.log(`lmao dude ${lang}`);
+//     callback();
+// }
+
+// l("what", function(){
+//     console.log("wtf dude its second text");
+// });
