@@ -180,3 +180,20 @@
 
 // const {border,bg} = options.colors;
 // console.log(border);
+
+// Масивы и псевдомасивы
+
+// const arr = [1,2,3,4,5];
+
+// // arr.pop();
+// // arr.push(12);
+
+// // console.log(arr);
+
+// // for(let value of arr){
+// //     console.log(value);
+// // }
+
+// arr.forEach(function(x,y,z){
+//     console.log(`index ${y} in array ${z}: ${x}`);
+// });
