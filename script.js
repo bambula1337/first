@@ -197,3 +197,22 @@
 // arr.forEach(function(x,y,z){
 //     console.log(`index ${y} in array ${z}: ${x}`);
 // });
+
+
+///Передача по ссылке и по значению
+
+///OOP
+
+// const hero = {
+//     damage: 30,
+//     health: 100
+// };
+
+// const heroViper = {
+//     damage: 40,
+// };
+
+// Object.setPrototypeOf(heroViper, hero);
+
+// const heroPudje = Object.create(hero);
+
