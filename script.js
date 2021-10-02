@@ -216,3 +216,83 @@
 
 // const heroPudje = Object.create(hero);
 
+
+//Practice 4
+
+
+
+
+
+// const pers = {
+//     count: 0,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     privat: false,
+//     films: function(){
+//         pers.count = +prompt ("сколько фильмов?", "");
+    
+//         while(pers.count == "" || pers.count == null || isNaN(pers.count)){
+//             pers.count = +prompt ("сколько фильмов?", "");
+//         }
+//     },
+//     rememberMyFilms: function(){
+//         for(let i = 0; i < 2; i++){
+
+//             const x = prompt("One of the last films"),
+//                   y = prompt("Rate");
+        
+//             (x != null && y != null && x.length > 0 && y.length > 0 && x.length < 50) ? pers.movies[x] = y : i--;
+//         }
+//     },
+//     lvlOfUser: function(){
+//         if(pers.count < 10){
+//             alert("Ты слишком мало просмотрел фильмов");
+//         }else if(10 < pers.count < 30){
+//             alert("Ты посмотрел немного фильмов");
+//         }else if (pers.count > 30){
+//             alert("Ты киноман!");
+//         }else{
+//             alert("Ошибка");
+//         }
+//     },
+//     showMyDB: function(){
+//         (pers.privat == false) ? (console.log(pers)) : console.log("privat = true");
+//     },
+//     writeYourGender: function(){
+//         for(let i = 0; i < 3; i++){
+//             const x = prompt(`Ваш любимый жанр под номером ${i++}.`);
+//             if(x != null && x.length > 0){
+//                 pers.genres[--i] = x;
+//             }
+//             else{
+//                 i = i - 2;
+//             }
+//         }
+//         pers.genres.forEach(function(x,y,z){
+//             console.log(`Любимый жанр #${y + 1} - это ${x}`);
+//         });
+        
+//     },
+//     start: function(){
+//         pers.films();
+//         pers.rememberMyFilms();
+//         pers.lvlOfUser();
+//         pers.showMyDB();
+//         pers.writeYourGender();  
+//     },
+//     tooggleVisibleMyDb: function(){
+//         (pers.privat == false) ? pers.privat = true : pers.privat = false
+//     }
+// };
+
+// pers.start();
+// console.log(pers.movies);
+
+
+
+
+
+
+
+
