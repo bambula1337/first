@@ -217,7 +217,7 @@
 // const heroPudje = Object.create(hero);
 
 
-//Practice 4
+// Practice 4
 
 
 
@@ -289,6 +289,11 @@
 // pers.start();
 // console.log(pers.movies);
 
+//Breakpoints
+
+print("hi");
+print("hello");
+print("wassup");
 
 
 
