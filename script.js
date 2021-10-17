@@ -211,7 +211,7 @@
 // const heroViper = {
 //     damage: 40,
 // };
-
+ 
 // Object.setPrototypeOf(heroViper, hero);
 
 // const heroPudje = Object.create(hero);
@@ -291,13 +291,12 @@
 
 //Breakpoints
 
-print("hi");
-print("hello");
-print("wassup");
+// print("hi");
+// print("hello");
+// print("wassup");
 
 
 
+///Dynamical typicizaling
 
-
-
-
+console.log(typeof(!!"fff"));
