@@ -299,4 +299,12 @@
 
 ///Dynamical typicizaling
 
-console.log(typeof(!!"fff"));
+// console.log(typeof(!!"fff"));
+
+//Exercises for understanding
+
+
+//Receiving elements from page
+
+
+
