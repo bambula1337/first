@@ -1,20 +1,36 @@
 'use strict';
 
-const box = document.getElementById("box");
-console.log(box); 
+const box = document.getElementById("box"),
+      btns = document.getElementsByTagName("button"),
+      wrapper = document.querySelector(".wrapper"),
+      circles = document.getElementsByClassName("circle"),
+      hearts = wrapper.querySelectorAll(".heart"),
+      firstHeart = wrapper.querySelector(".heart");
 
-const btns = document.getElementsByTagName("button");
-console.log(btns);
+box.style.backgroundColor = "green";
+box.style.width = "200px";
 
-const circles = document.getElementsByClassName("circle");
-console.log(circles);
+btns[1].style.borderRadius = "100%";
 
-const hearts = document.querySelectorAll(".heart");
-console.log(hearts);
+box.style.cssText = "background-color: green; width: 50px";
 
-hearts.forEach(item=> {
-    console.log(item);
-});
+const y = document.createElement("button");
+const x = document.createTextNode("hello its me!");
 
-const firstHeart = document.querySelector(".heart");
-console.log(typeof(firstHeart));
+y.classList.add("black");
+y.style.height = "200px";
+
+document.querySelector(".wrapper").prepend(y);
+// wrapper.before(y);
+// wrapper.after(y);
+
+// circles[0].remove();
+// btns[4].replaceWith(btns[1]);
+
+y.innerHTML = "<h2>Hello</h2>";
+// y.textContent = "Hi";
+
+y.insertAdjacentHTML("afterbegin", "<h3>Hello123</h3>");
+y.insertAdjacentHTML("afterend", "<h3>Hello123</h3>");
+y.insertAdjacentHTML("beforebegin", "<h3>Hello123</h3>");
+y.insertAdjacentHTML("beforeend", "<h3>Hello123</h3>");
