@@ -74,5 +74,4 @@ document.addEventListener("DOMContentLoaded", () =>{
     };
     adverts.forEach(removeElement);
     addFilmsOnPage();
-    
 });
