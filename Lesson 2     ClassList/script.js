@@ -36,4 +36,5 @@ btnsParent.addEventListener("click", (e) =>{
 btn.classList.add("red"); 
 btnsParent.append(btn);
 
-
+let x = btns.length;
+console.log(btns[0].matches(".blue"));
