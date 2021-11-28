@@ -21,9 +21,12 @@
 // });
 
 
-const myAnimFunc = function(){
+const myAnimFunc = function(x,r){
   const elem = document.querySelector(".box");
   let pos = 0;
+  let buper = x;
+  console.log(`${buper}`);
+  console.log(r);
 
   const intervalOfBox = setInterval(frameFunc, 100);
   function frameFunc(){
@@ -38,5 +41,5 @@ const myAnimFunc = function(){
   }
 };
 
-document.addEventListener("click", myAnimFunc());
+document.querySelector(".btn").addEventListener("click", myAnimFunc);
 

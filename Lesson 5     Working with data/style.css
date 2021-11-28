@@ -1,0 +1,13 @@
+.red{
+  background-color: red;
+}
+
+.green{
+  background-color: green;
+}
+*{
+  width: 200px;
+  margin-bottom: 20px;
+  height: 50px;
+  text-align: center;
+}
