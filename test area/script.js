@@ -2,22 +2,16 @@
 
 
 
-function pow(item, times, start){
-  if(times == 1){
-    console.log(item);
-  }
-  else{
-    item = item * start;
-    times--;
-    pow(item, times,start);
-  }
-}
-let x = 1,
-    y = 1,
-    z = 1;
+let arr = [1,2,3];
+
+let total = arr.reduce((acc,e) => {
+  console.log(`accum: ${acc} and element: ${e}`);
+  return acc + e;
+}, 10);
+
+
+
 document.querySelector("button").addEventListener("click", (e) =>{
-  pow(x,y,z);
-  x++;
-  y++;
-  z++;
+  console.log(arr);
+  console.log(total);
 });

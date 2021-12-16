@@ -63,7 +63,7 @@ main{
 footer{
   display: flex;
   flex-direction: column;
-  background-color: rgb(95, 28, 219);
+  background-color: rgb(74, 0, 211);
 }
 button{
   margin-top: 20px;
