@@ -11,6 +11,7 @@ button.addEventListener("click", (e) =>{
   // box.style.overflow="visible";
   // console.log(box.scrollTop);
   console.log(box.getBoundingClientRect());
+  console.log(window.getComputedStyle(box));
 });
 
 
