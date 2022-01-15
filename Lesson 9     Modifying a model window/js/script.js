@@ -172,15 +172,10 @@ const modal = {
     });
   },
   check: function(){
-    console.log(document.documentElement.scrollTop);
     if(window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight){
       modalwindow.style.display = "block";
       document.body.style.overflow = "hidden";
       document.removeEventListener("scroll", modal.check);
-      console.log("succesful deleted");
-    }
-    else{
-      console.log("less than x");
     }
   }
 };
